@@ -1,0 +1,163 @@
+ 
+ :root {
+
+    --background: rgb(25, 72, 114);
+    --h1_h2: #114E54;
+    --box: #1f1e61;
+    --box2: #43165C;
+     
+ }
+
+ h1, h2{
+    color: var(--h1_h2);
+    font-size: 2em;
+    
+ }
+
+ body {
+    background-color: var(--background);
+    font: normal 10pt cursive;
+ }
+
+ header{
+    display: block;
+    margin: auto;
+    margin-top: -15px;
+    width: 800px;
+    height: 90px;
+    background-color: var(--box);
+ }
+
+ #linha {
+    width: 800px;               /* Define a largura da linha */
+    height: 1.5px;            /* Define a altura da linha */
+    background-color: #000000;   /* Cor da linha */
+    margin-top: -10px;           /* Espaçamento horizontal */
+    margin-left: 25px;    
+    display: flex;
+}
+
+ section {
+    padding-top: 1px;
+    margin: auto;
+    width: 850px;
+    height: 500px;
+    background-color: aliceblue;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    
+ }
+
+ #left { /* BOX DE TEXTO */
+    
+    width: 400px;
+    height: 320px;
+    margin-left: 25px;
+    margin-top: 20px;
+    display: flex;
+    text-align: justify;
+    background-color: white;
+
+ }
+
+ .vertical-line {
+    width: 2px;               /* Define a largura da linha */
+    height: 320px;            /* Define a altura da linha */
+    background-color: #000000;   /* Cor da linha */
+    margin: -10px;           /* Espaçamento horizontal */
+    margin-left: 410px;
+    margin-top: -250px;
+    display: flex;
+}
+
+ #right { /* VIDEO YOUTUBE */
+    
+    width: 400px;
+    height: 320px;
+    margin-left: 425px;
+    margin-top: -320px;
+    display: flex;
+    background-color: white;
+    padding-left: 25px;
+ }
+
+ 
+
+ nav ul {
+    list-style-type: none;
+    margin-left: 25px;
+    margin-top: -1px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  /* USANDO <a> EM UM NOME EM LI NO NAV FAZ COM QUE NOME FIQUE CENTRALIZADO!! */
+  
+  nav ul li {
+    margin-right: 160px;
+    margin-top: 3px;
+    background-color: var(--box2);
+    color: rgb(243, 243, 243);
+    font-size: 11pt;
+    
+  }
+
+  nav ul li a {
+    color: rgb(243, 243, 243);
+    background-color: var(--box2);
+    text-decoration: none;
+    padding: 1px 15px;
+    display: block;
+  }
+
+  nav ul li a:hover {
+    background-color: #575757;
+  }
+
+  /* Menu responsivo */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  }
+ /* --------------------------------------- MOBILE --------------------------------- */
+
+ 
+  @media (max-width: 800px) {
+
+   header{
+      display: block;
+      margin: auto;
+      margin-top: -15px;
+      width: 315px;
+      height: 90px;
+      background-color: var(--box);
+   }
+
+   section {
+      padding-top: 1px;
+      margin: auto;
+      width: 315px;
+      height: 500px;
+      background-color: aliceblue;
+      border: 1.5px solid black;
+      border-radius: 5px;
+      
+   }
+
+   #linha {
+      width: 300px;               /* Define a largura da linha */
+      margin-left: 6px;
+     
+  }
+
+
+
+
+  }
